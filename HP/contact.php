@@ -5,13 +5,41 @@
     <meta http-equiv="refresh" content="5; URL=">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript">
+    <script type = "text/javascript">
+    <!--
+    function functionName()
+    {
+    var select1 = document.forms.formName.selectName1; //変数select1を宣言
+    var select2 = document.forms.formName.selectName2; //変数select2を宣言
 
+    select2.options.length = 0; // 選択肢の数がそれぞれに異なる場合、これが重要
 
+    if (select1.options[select1.selectedIndex].value == "1")
+    {
+    select2.options[0] = new Option("りんご");
+    select2.options[1] = new Option("みかん");
+    select2.options[2] = new Option("オレンジ");
+    }
+
+    else if (select1.options[select1.selectedIndex].value == "2")
+    {
+    select2.options[0] = new Option("キャベツ");
+    select2.options[1] = new Option("きゅうり");
+    select2.options[2] = new Option("にんんじん");
+    select2.options[3] = new Option("たまねぎ");
+    }
+
+    else if (select1.options[select1.selectedIndex].value == "3")
+    {
+    select2.options[0] = new Option("豚肉");
+    select2.options[1] = new Option("牛肉");
+    }
+    }
+    //-->
     </script>
     <title>CONTACT</title>
 </head>
-<body>
+<body bgcolor onLoad="functionName()">
   <center>
 
 <div class="zentai2">
@@ -59,29 +87,20 @@
             <tr>
               <td>
                 <table border="0">
-                  <form action="" method="post">
-                  		  <input type="hidden"id="sentaku_1"name="sentaku_1"alue=牛肉,豚肉,鶏肉>
-                  		  <input type="hidden"id="sentaku_2"name="sentaku_2"value=麩菓子,きなこ棒>
-                  		  <input type="hidden"id="sentaku_3"name="sentaku_3"value=リンゴジュース,オレンジジュース,ドクペ>
-
-
-
+                  <form name="formName" method="post" action="">
                   <tr>
-                    <td class="foom">お名前</td>
+                    <td class="foom"><label for="name">お名前</label></td>
                     <td class="foom">
-                      <input type="text" name="" value="名前を入力してください"class="fome">
+                      <input type="text" name="" placeholder="名前を入力してください"class="fome"tabindex="1"id="name">
                     </td>
                   </tr>
                   <tr>
+                    <td class="foom"><label>好きな食べ物のジャンルは？</label></td>
                     <td class="foom">
-                      好きな食べ物のジャンルは？
-                    </td>
-                    <td class="foom">
-                      <select class="sentaku" name="janru"onChange="jannru()">
-                        <option value=""></option>
-                        <option value="">お肉</option>
-                        <option value="">お菓子</option>
-                        <option value="">ジュース</option>
+                      <select name = "selectName1" onChange="functionName()"class="sentaku">
+                        <option value = "1">くだもの</option>
+                        <option value = "2">やさい</option>
+                        <option value = "3">にくるい</option>
                       </select>
                     </td>
                   </tr>
@@ -90,17 +109,30 @@
                       そのジャンル内で何が特に好きですか？
                     </td>
                     <td class="foom">
-                      <select class="sentaku" name="">
+                      <select name = "selectName2"class="sentaku">
                       </select>
                     </td>
                   </tr>
                   <tr>
-                    <td class="foom"></td>
-                    <td class="foom"></td>
+                    <td class="foom"><label for="huku">好きな洋服は？</label></td>
+                    <td class="foom">
+                      <input type="text" name="" placeholder="ジャンル"class="fome"tabindex="1"id="huku">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="foom"><label for="tell">電話番号</label></td>
+                    <td class="foom">
+                      <input type="tel" name="" placeholder="000-0000-0000"class="fome"tabindex="1"id="tell">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="foom"><label for="mail">メールアドレス</label></td>
+                    <td class="foom">
+                      <input type="mail" name="" placeholder="メールアドレスを入力してください"class="fome"tabindex="1"id="mail">
+                    </td>
                   </tr>
                 </table>
                 <center>
-                <br>
                 <input type="submit" name="send_button" value="送信する"onclick="sendbutton()"class="send_button">
               </form>
               </td>
