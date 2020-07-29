@@ -21,7 +21,7 @@ if( !empty($_POST['btn_confirm']) ) {
     <center>
       <table class="zentai"><!--全体のテーブル-->
         <tr>
-          <td class="botan">
+          <td class="botan"><!--ここからボタンを載せているところ -->
             <table><!--ボタンを入れてある場所-->
               <tr>
                 <td><a href="index2.php"class="btn btn-border">商品登録</a></td>
