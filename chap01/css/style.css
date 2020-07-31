@@ -4,7 +4,6 @@ table.zentai{
 }
 table.honbun{
   width:700px;
-  height:600px;
 }
 td.botan{
   width:200px;
@@ -25,7 +24,7 @@ td.ueyose{
 }
 tr.white{
   background-color: #FFF;
-  height:33px;
+  height:50px;
 }
 
 td.bigf{
