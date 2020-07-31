@@ -48,7 +48,7 @@
                 <td width="200">個数</td>
                 <td width="200">合計金額</td>
                 </tr>
-                <form method="post" action=""id="fm1">
+                <form method="post" action=""id="fm5">
                 <?php
                 foreach ($stmt as $row) {
                   echo '<tr height="40" class="white">';
@@ -61,18 +61,44 @@
                   echo '<td width="200"class="bigf">';echo $row['timeday'];
                   echo '</td>';
                   echo '<td>';
-                  echo $row['id'];
+                  echo $row['kosuu'];
                   echo '</td>';
                   echo '<td>';
-                  echo '<input type="hidden"name="';echo $row['id'];echo'"id="';echo $row['id'];echo'">';
-                  $goukeia=$row['id'];
+                  $goukeikosuu = $goukeikosuu+$row['kosuu'];
                   $goukei = $row['kosuu']*$row['price'];
                   echo $goukei;
+                  $goukeia=$goukeia+$goukei;
+                  echo '</td>';
+                  echo '<td>';
                   echo '</td>';
                   echo '</tr>';
                 }
                 echo '</table>';
+                echo '
+                <table class="okaikei">
+                  <tr>
+                    <td>合計点数</td><td>合計金額</td><td>お預かり</td><td>おつり</td><td>会計ボタン</td>
+                  </tr>
+                  <tr>
+                    <td>';
+                    echo $goukeikosuu;
+                    echo '</td>
+                    <td>';
+                    echo $goukeia;
+                    echo '</td>
+                    <input type="hidden"id="goukeikingaku"value="';echo $goukeia;echo '">';
+                    echo'<td>
+                    <input type="number"id="oadukari">
+                    </td>
+                    <td></td>
+                    <td>
+                    <input type="submit" name="" value="会計"onClick="okaikei()">
+                    </td>
+                  </tr>
+                </table>
+                ';
                 ?>
+
 
           </td>
           <td class="yohaku">
