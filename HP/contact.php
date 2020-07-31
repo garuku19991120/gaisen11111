@@ -53,40 +53,7 @@
     <table class="zentai"border="1">
       <tr>
         <td class="buttontable">
-          <table class="none">
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="index.php" class="btn-animation-02">
-                    <span>1<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="profile.php" class="btn-animation-02">
-                    <span>2<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="works.php" class="btn-animation-02">
-                    <span>3<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="contact.php" class="btn-animation-02">
-                    <span>4<span></a>
-                </div>
-              </td>
-            </tr>
-          </table><!-- ボタンが格納されている。 -->
+          <?php include('./php/menu_main.php'); ?>
         </td>
         <td>
 

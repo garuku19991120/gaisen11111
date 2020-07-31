@@ -15,40 +15,7 @@
 
       <tr>
         <td class="buttontable">
-          <table class="none">
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="index.php" class="btn-animation-02">
-                    <span>HOME<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="profile.php" class="btn-animation-02">
-                    <span>PROFILE<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="works.php" class="btn-animation-02">
-                    <span>WORKS<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="contact.php" class="btn-animation-02">
-                    <span>CONTACT<span></a>
-                </div>
-              </td>
-            </tr>
-          </table><!-- ボタンが格納されている。 -->
+          <?php include('./php/menu_main.php'); ?>
         </td>
         <td>
           <table class="main_contents"boeder="1">
