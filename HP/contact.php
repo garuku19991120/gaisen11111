@@ -6,6 +6,7 @@
     <meta http-equiv="refresh" content="5; URL=">
 -->
 
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -278,9 +279,6 @@
       </tr>
     </table>
 </div>
-<hr>
-<div class="copywrite">
   <p><?php include('./php/copywrite.php'); ?></p>
-</div>
 </body>
 </html>

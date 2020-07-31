@@ -66,9 +66,6 @@
       </tr>
     </table>
 </div>
-<hr>
-<div class="copywrite">
   <p><?php include('./php/copywrite.php'); ?></p>
-</div>
 </body>
 </html>

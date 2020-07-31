@@ -12,7 +12,7 @@
 
 <div class="zentai2">
     <table class="zentai">
-      
+
       <tr>
         <td class="buttontable">
           <table class="none">
@@ -89,9 +89,6 @@
       </tr>
     </table>
 </div>
-<hr>
-<div class="copywrite">
   <p><?php include('./php/copywrite.php'); ?></p>
-</div>
 </body>
 </html>

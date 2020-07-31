@@ -3,10 +3,10 @@
   height: 800px;
 }
 .buttontable{
-  width: 180px;
+  width: 200px;
 }
 .main_contents{
-  width: 600px;
+  width: 700px;
 }
 .sentaku{
   width: 300px;
@@ -17,10 +17,21 @@
   height: 30px;
 }
 .fome{
-  width: 300px;
+  width: 350px;
   font-size: 18px;
 }
 .send_button{
   width: 150px;
   height:50px;
+
+}
+.copywrite{
+  font-size: 10px;
+}
+.yohaku{
+  width:200px;
+}
+.dourui{
+  width:200px;
+  height:200px;
 }
