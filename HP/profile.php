@@ -5,52 +5,20 @@
     <meta http-equiv="refresh" content="5; URL=">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <title>PROFILE</title>
 </head>
 <body>
   <center>
 
 <div class="zentai2">
-    <table class="zentai">
+    <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
       <tr>
         <td class="buttontable">
-          <table class="none">
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="index.php" class="btn-animation-02">
-                    <span>HOME<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="profile.php" class="btn-animation-02">
-                    <span>PROFILE<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="works.php" class="btn-animation-02">
-                    <span>WORKS<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="contact.php" class="btn-animation-02">
-                    <span>CONTACT<span></a>
-                </div>
-              </td>
-            </tr>
-          </table><!-- ボタンが格納されている。 -->
+          <?php include('./php/menu_main.php'); ?>
         </td>
         <td>
-          <table class="main_contents"boeder="1">
+          <table class="main_contents">
             <tr>
               <td class="top">
                 <table border="1"class="top">
@@ -77,10 +45,10 @@
             </tr>
           </table>
           </td>
-          <td>
+          <td class="ueyose">
             <table class="yohaku">
               <tr>
-                <td></td>
+                <td><?php include('./php/menu_phone.php'); ?></td>
               </tr>
             </table>
           </td>
@@ -88,9 +56,6 @@
       </tr>
     </table>
 </div>
-<hr>
-<div class="copywrite">
   <p><?php include('./php/copywrite.php'); ?></p>
-</div>
 </body>
 </html>

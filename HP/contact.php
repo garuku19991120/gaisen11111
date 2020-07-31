@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/form.css">
     <script type = "text/javascript">
     <!--
     function functionName()
@@ -49,48 +50,14 @@
   <center>
 
 <div class="zentai2">
-    <table class="zentai"border="1">
+    <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
       <tr>
         <td class="buttontable">
-          <table class="none">
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="index.php" class="btn-animation-02">
-                    <span>1<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="profile.php" class="btn-animation-02">
-                    <span>2<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="works.php" class="btn-animation-02">
-                    <span>3<span></a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="container">
-                  <a href="contact.php" class="btn-animation-02">
-                    <span>4<span></a>
-                </div>
-              </td>
-            </tr>
-          </table><!-- ボタンが格納されている。 -->
+          <?php include('./php/menu_main.php'); ?>
         </td>
         <td>
 
           <center>
-            <!--
             <table class="main_contents">
               <tr>
                 <td>
@@ -172,104 +139,11 @@
                 </td>
               </tr>
             </table>
-          -->
-          <table class="main_contents">
-            <tr>
-              <td>
-                <table border="0">
-                  <form name="formName" method="post" action="">
-                  <tr>
-                    <td class="foom"><label for="name">お名前</label></td>
-                    <td class="foom">
-                      <input type="text" name="" placeholder=""class="fome"tabindex="1"id="name">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="foom"><label for="mail">メールアドレス</label></td>
-                    <td class="foom">
-                      <input type="mail" name="" placeholder=""class="fome"tabindex="1"id="mail">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="foom"><label for="tell">電話番号</label></td>
-                    <td class="foom">
-                      <input type="tel" name="" placeholder=""class="fome"tabindex="1"id="tell">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="foom"><label for="page">好きな服</label></td>
-                    <td class="foom">
-                      <input type="text" name="" placeholder=""class="fome"tabindex="1"id="page">
-                    </td>
-                  </tr>
-                  <tr>
-                    <tr>
-                    <td class="foom"><label for="nouki">希望納期</label></td>
-                    <td class="foom">
-                      <input type="text" name="" placeholder=""class="fome"tabindex="1"id="nouki">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="foom"><label for="yosan">ご予算</label></td>
-                    <td class="foom">
-                      <input type="text" name="" placeholder=""class="fome"tabindex="1"id="yosan">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="foom"><label>好きな食べ物のジャンルは？</label></td>
-                    <td class="foom">
-                      <select name = "selectName1" onChange="functionName()"class="sentaku">
-                        <option value = "0"></option>
-                        <option value = "1">くだもの</option>
-                        <option value = "2">やさい</option>
-                        <option value = "3">にくるい</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="foom">
-                      そのジャンル内で何が特に好きですか？
-                    </td>
-                    <td class="foom">
-                      <select name = "selectName2"class="sentaku">
-                      </select>
-                    </td>
-                  </tr>
-                </table>
-                <center>
-                <input type="submit" name="send_button" value="送信する"onclick="sendbutton()"class="send_button">
-              </form>
-              </td>
-            </tr>
-          </table>
-          <td>
+          <td class="ueyose">
             <table class="yohaku">
               <tr>
                 <td>
-                <input id="acd-check1" class="acd-check" type="checkbox">
-                  <label class="acd-label" for="acd-check1">
-                    <div id="humberger"class="btn">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </label>
-                <div class="acd-content">
-                  <table border="0">
-                    <tr>
-                      <td class="menu_ber"><a href="index.php"class="btn_url">HOME</a></td>
-                    </tr>
-                    <tr>
-                      <td class="menu_ber"><a href="profile.php"class="btn_url">PROFILE</a></td>
-                    </tr>
-                    <tr>
-                      <td class="menu_ber"><a href="works.php"class="btn_url">WORKS</a></td>
-                    </tr>
-                    <tr>
-                      <td class="menu_ber"><a href="contact.php"class="btn_url">CONTACT</a></td>
-                    </tr>
-                  </table>
-                </div>
+                <?php include('./php/menu_phone.php'); ?>
                 </td>
               </tr>
             </table>
@@ -278,9 +152,6 @@
       </tr>
     </table>
 </div>
-<hr>
-<div class="copywrite">
   <p><?php include('./php/copywrite.php'); ?></p>
-</div>
 </body>
 </html>

@@ -4,24 +4,14 @@
 }
 .buttontable{
   width: 180px;
+  vertical-align: top;
 }
 .main_contents{
   width: 600px;
 }
-.sentaku{
-  width: 300px;
-  font-size: 20px;
+.yohaku{
+  width: 200px;
 }
-.foom{
-  width: 300px;
-  height: 30px;
-}
-.fome{
-  width: 300px;
-  font-size: 18px;
-}
-.send_button{
-  width: 150px;
-  height:50px;
-
+.ueyose{
+  vertical-align: top;
 }
