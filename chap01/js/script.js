@@ -43,19 +43,8 @@ function reset(){
   }
 
 function okaikei(){
-  var fm = document.getElementById("fm5");
-  fm.goukeikingaku.value = document.getElementById(goukeikingaku).value;
-  var okane = document.getElementById("oadukari");
-  var goukei = document.getElementById("goukeikingaku");
-  alert(okane);
-    alert(goukei);
     ret = confirm("お会計してもよろしいでしょうか？");
     if (ret == true){
-      if (okane >= goukei){
-        alert("okanenohougaooi");
-      }else{
-        alert("goukeinohougaooi");
-      }
-    }
+      document.getElementById("oturi").value=document.getElementById("oadukari").value-document.getElementById("goukeikingaku").value;
   }
   }

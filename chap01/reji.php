@@ -86,13 +86,15 @@
                     <td>';
                     echo $goukeia;
                     echo '</td>
-                    <input type="hidden"id="goukeikingaku"value="';echo $goukeia;echo '">';
+                    <input type="hidden"id="goukeikingaku"name="goukeikingaku"value="';echo $goukeia;echo '">';
                     echo'<td>
                     <input type="number"id="oadukari">
                     </td>
-                    <td></td>
                     <td>
-                    <input type="submit" name="" value="会計"onClick="okaikei()">
+                    <input type="text"id="oturi"name="oturi"class="oturi"readonly="readonly">
+                    </td>
+                    <td>
+                    <input type="button" name="" value="会計"onClick="okaikei()">
                     </td>
                   </tr>
                 </table>
