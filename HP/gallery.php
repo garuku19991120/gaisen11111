@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <title>WORKS</title>
+    <title>HOME</title>
 </head>
 <body>
   <center>
 
 <div class="zentai2">
-    <table class="zentai">
+    <table class="zentai" border="1">
       <tr>
         <td class="buttontable">
           <?php include('./php/menu_main.php'); ?>

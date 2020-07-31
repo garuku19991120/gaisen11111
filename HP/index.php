@@ -5,6 +5,7 @@
     <meta http-equiv="refresh" content="5; URL=">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <title>HOME</title>
 </head>
 <body>

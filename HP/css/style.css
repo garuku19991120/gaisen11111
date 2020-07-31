@@ -4,6 +4,8 @@
 }
 .buttontable{
   width: 200px;
+  vertical-align: top;
+  padding-top: 10px;
 }
 .main_contents{
   width: 700px;

@@ -1,36 +1,34 @@
 <?php
-echo '<table class="none">';
-  echo '<tr>';
-    echo '<td>';
-      echo '<div class="container">';
-        echo '<a href="index.php" class="btn-animation-02">';
-          echo '<span>HOME<span></a>';
-      echo '</div>';
-    echo '</td>';
-  echo '</tr>';
-  echo '<tr>';
-    echo '<td>';
-      echo '<div class="container">';
-        echo '<a href="profile.php" class="btn-animation-02">';
-          echo '<span>PROFILE<span></a>';
-      echo '</div>';
-    echo '</td>';
-  echo '</tr>';
-  echo '<tr>';
-    echo '<td>';
-      echo '<div class="container">';
-        echo '<a href="works.php" class="btn-animation-02">';
-          echo '<span>WORKS<span></a>';
-    echo '</div>';
-    echo '</td>';
-  echo '</tr>';
-  echo '<tr>';
-    echo '<td>';
-      echo '<div class="container">';
-        echo '<a href="contact.php" class="btn-animation-02">';
-          echo '<span>CONTACT<span></a>';
-      echo '</div>';
-    echo '</td>';
-  echo '</tr>';
-echo '</table><!-- ボタンが格納されている。 -->';
+//ここにメニューボタンなどが収納されているテーブルを置いている。
+
+
+echo '
+  <table class="none">
+    <tr>
+      <td>
+        <a href="index.php" class="btn01">HOME</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="profile.php" class="btn01">PROFILE</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="works.php" class="btn01">GALLERY</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="works.php" class="btn01">WORKS</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="contact.php" class="btn01">CONTACT</a>;
+      </td>
+    </tr>
+  </table>
+';
 ?>
