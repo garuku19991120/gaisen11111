@@ -1,6 +1,6 @@
 <?php
 echo '
-
+<div class="none2">
 <input id="acd-check1" class="acd-check" type="checkbox">
   <label class="acd-label" for="acd-check1">
     <div id="humberger"class="btn">
@@ -18,6 +18,11 @@ echo '
       <td class="menu_ber"><a href="profile.php"class="btn_url">PROFILE</a></td>
     </tr>
     <tr>
+      <td class="menu_ber">
+          <a href="gallery.php" class="menu01">GALLERY</a>
+      </td>
+    </tr>
+    <tr>
       <td class="menu_ber"><a href="works.php"class="btn_url">WORKS</a></td>
     </tr>
     <tr>
@@ -25,5 +30,6 @@ echo '
     </tr>
   </table>
 </div>
+    </div>
 ';
  ?>
