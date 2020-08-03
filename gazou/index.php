@@ -8,102 +8,91 @@
   </head>
   <body>
     <hr>
-    <div class="hidari">
-    <table border="<?php include('./php/tablenumber.php'); ?>"class="hidari">
-    </div>
+    <table>
       <tr>
-        <td></td>
-        <td class="menu">
-          <a href="">画像確認</a>
-        </td>
-        <td class="menu">
-          <a href="#">画像設定編集</a>
-        </td>
-        <td class="menu"></td>
+        <td></td><td><a href="#">画像表示設定</a></td><td><a href="#">画像表示</a></td>
       </tr>
     </table>
     <hr>
-<!--ここまでがメニュー -->
-
-<?php
-
-
- ?>
-
-
-
-
- <input type="file" id="example" multiple>
-
- <!-- 👇ここにプレビュー画像を追加する -->
- <div id="preview"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <center>
 
-      <div class="yohaku"></div>
-<table border="<?php include('./php/tablenumber.php'); ?>">
-  <tr>
-    <td class="gazounyuuryoku">
-      <table>
-        <tr>
-          <td>
 
-            <label for="sample1"><input type="file" id="sample1"accept="image/jpeg, image/png"></label></td>
-            <td><input type="button"value="👁"></td>
-            <td><input type="submit" name="" value="✖"></td>
-        </tr>
-      </table>
-      <table>
-        <tr>
-          <td>
-            <label for="sample1"><input type="file"id="sample1"accept="image/jpeg, image/png"></label></td>
-            <td><input type="button"value="👁"></td>
-            <td><input type="submit" name="" value="✖"></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td class="gazounyuuryoku">
-      <table>
-        <tr>
-          <td>
-            <label for="sample1"><input type="file" id="sample1"accept="image/jpeg, image/png"></label></td>
-            <td><input type="button"value="👁"></td>
-            <td><input type="submit" name="" value="✖"></td>
-        </tr>
-      </table></td>
-  </tr>
+      <?php
+        // ドライバ呼び出しを使用して MySQL データベースに接続します
+        $dsn = 'mysql:host=localhost;dbname=mysql';
+        $user = 'root';
+
+        try {
+            $dbh = new PDO($dsn, $user);
+          } catch (PDOException $e) {
+            echo "接続に失敗しました。: " . $e->getMessage() . "\n";
+            exit();
+          }
+
+          echo '<br>';
+          // 素敵な処理
+          $dbh = new PDO($dsn, $user);
+
+          $sql = "SELECT * FROM gazou";
+
+          // SQLステートメントを実行し、結果を変数に格納
+          $stmt = $dbh->query($sql);
+        ?>
 
 
+    <table border="<?php include('./php/tablenumber.php'); ?>">
+      <tr>
+        <td>
+          <form action="" method="post">
+            <input type="file" name="fname">
+        </td>
+        <td>
+          <input type="submit" value="アップロード">
+        </form>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" name="fname">
+        </td>
+        <td>
+          <input type="submit" value="アップロード">
+        </form>
+        </td>
+      </tr>
+    </table>
+<?php
+$tempfile = $_FILES['fname']['tmp_name'];
+$filename = './upimg/' . $_FILES['fname']['name'];
 
-</table>
-
-
-<input type="file" id="example" multiple>
-
-<!-- 👇ここにプレビュー画像を追加する -->
-<div id="preview"></div>
-
-
-<div id="preview"></div>
-
-<form method="post" enctype="multipart/form-data">
-  <input type="file" name="example" accept="image/*">
-  <button type="submit">送信する</button>
-</form>
+if (is_uploaded_file($tempfile)) {
+  if ( move_uploaded_file($tempfile , $filename )) {
+    echo $filename . "をアップロードしました。";
+  } else {
+    echo "ファイルをアップロードできません。";
+  }
+} else {
+  echo "ファイルが選択されていません。";
+}
+?>
+<?php
+echo $_POST["fname"];
+if ($_POST["fname"] == "true") {
+  // フォームから送信されたデータを各変数に格納
+ $timestamp = time();
+ $timeday=date("Y-m-d H:i:s", $timestamp);
+ $fname = $_POST['fname'];
+$mysqli = new mysqli( "localhost", "root", "", "mysql");
+// SQL(INSERT)を作成
+$sql = "INSERT INTO gazou
+ (
+  code, createdate
+) VALUES (
+  '$fname','$timeday'
+)";
+$mysqli->query($sql);
+}
+?>
   </body>
 </html>

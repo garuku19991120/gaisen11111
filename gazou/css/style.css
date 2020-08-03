@@ -15,6 +15,9 @@ a{
   color: #000;
   font-family : arial black,'ＭＳ Ｐ明朝',sans-serif ;
 }
+a:hover{
+  opacity: 0.1;
+}
 .gazounyuuryoku{
   width:500px;
 margin: 50px;
