@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>aaa</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript">
     $(function(){
   	$(window).scroll(function (){

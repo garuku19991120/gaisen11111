@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/size.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/form.css">
+    <script type="text/javascript" src="./js/script.js"></script>
     <script type = "text/javascript">
     <!--
     function functionName()

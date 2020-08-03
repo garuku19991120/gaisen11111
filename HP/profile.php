@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/size.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/menu.css">
+      <script type="text/javascript" src="./js/script.js"></script>
     <title>PROFILE</title>
 </head>
 <body>

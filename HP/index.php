@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/size.css">
     <link rel="stylesheet" href="./css/menu.css">
+      <script type="text/javascript" src="./js/script.js"></script>
     <title>HOME</title>
 </head>
 <body>
