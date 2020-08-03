@@ -19,6 +19,12 @@
           <td>
             <table class="honbun"><!--ここから本文-->
               <tr>
+                <td class="taitoru">注文</td>
+              </tr>
+              <tr>
+                <td height="30"></td>
+              </tr>
+              <tr>
                 <td class="ueyose">
                   <center>
                     <?php
@@ -103,7 +109,7 @@
                         // 素敵な処理
                         $dbh = new PDO($dsn, $user);
 
-                        $sql = "SELECT * FROM tyuumon";
+                        $sql = "SELECT * FROM nyuuryoku";
 
                         // SQLステートメントを実行し、結果を変数に格納
                         $stmt = $dbh->query($sql);
@@ -112,6 +118,7 @@
                       <tr height="40"class="top">
                       <td width="150">商品名</td>
                       <td width="200">更新日時</td>
+                      <td width="200">個数</td>
                       <td width="150"><input type="button" name="" value="リセット"onClick="reset()"></td>
                       <?php
                         foreach ($stmt as $row) {
@@ -120,7 +127,7 @@
                             echo '</td>';
                             echo '<td class="white">';echo $row['timeday'];
                             echo '</td>';
-                            echo '<td>';
+                            echo '<td class="white">';echo $row['kosuu'];
                             echo '</td>';
                           echo '</tr>';
                         }

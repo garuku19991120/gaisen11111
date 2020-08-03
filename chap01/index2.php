@@ -25,7 +25,13 @@ if( !empty($_POST['btn_confirm']) ) {
             <?php include('./php/menu.php'); ?>
           </td>
           <td>
-            <table class="honbun"><!--ここから本文-->
+            <table class="honbun"border="0"><!--ここから本文-->
+							<tr>
+								<td class="taitoru">商品登録</td>
+							</tr>
+							<tr>
+								<td height="30"></td>
+							</tr>
               <tr>
                 <td class="ueyose">
                   <center>

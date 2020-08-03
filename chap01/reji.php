@@ -7,17 +7,24 @@
     <script type="text/javascript" src="./js/script.js">
     </script>
     <link rel="stylesheet" href="./css/style.css">
-    <title>商品登録</title>
+    <title>レジ</title>
   </head>
   <body bgcolor=#e4e3e3>
     <center>
-      <table class="zentai"border="1"><!--全体のテーブル-->
+      <table class="zentai"border="0"><!--全体のテーブル-->
         <tr>
           <td class="botan">
             <?php include('./php/menu.php'); ?>
           </td>
           <td>
             <table class="honbun"><!--ここから本文-->
+            <tr>
+              <td class="taitoru">レジ</td>
+            </tr>
+            <tr>
+              <td height="30"></td>
+            </tr>
+
 
               <?php
                 // ドライバ呼び出しを使用して MySQL データベースに接続します
@@ -40,6 +47,29 @@
                   // SQLステートメントを実行し、結果を変数に格納
                   $stmt = $dbh->query($sql);
                 ?>
+                <?php
+
+                  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                   try {
+                   $dsn = 'mysql:host=localhost;dbname=mysql';
+                   $user = 'root';
+                   $dbh = new PDO($dsn, $user);
+                    // SQL作成
+                     $sql = "DELETE FROM nyuuryoku;";
+
+                      // SQL実行
+                       $res = $dbh->query($sql);
+
+                     } catch(PDOException $e) {
+                        echo $e->getMessage();
+                         die();
+                         // 接続を閉じる
+                         $dbh = null;
+                       }
+                       }
+
+            ?>
+
                 <tr height="40"class="top">
                 <td width="100">ID</td>
                 <td width="150">商品名</td>
@@ -47,6 +77,12 @@
                 <td width="200">更新日時</td>
                 <td width="200">個数</td>
                 <td width="200">合計金額</td>
+                <td width="200">削除</td>
+                <td width="200">
+                  <form action="" method="post"id="sakujo">
+                    <input type="button" name="sakujo" value="全削除"onclick="ryry()">
+                  </form>
+                </td>
                 </tr>
                 <form method="post" action=""id="fm5">
                 <?php

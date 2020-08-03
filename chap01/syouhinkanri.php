@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <script type="text/javascript" src="./js/script.js">
     </script>
-    <title>商品登録</title>
+    <title>商品管理</title>
   </head>
   <body bgcolor=#e4e3e3>
     <center>
@@ -18,6 +18,12 @@
           </td>
           <td>
             <table class="honbun"><!--ここから本文-->
+              <tr>
+                <td class="taitoru">商品管理</td>
+              </tr>
+              <tr>
+                <td height="30"></td>
+              </tr>
               <tr>
                 <td class="ueyose">
                   <center>
