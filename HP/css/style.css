@@ -1,3 +1,7 @@
+.zentai{
+  width: 1100px;
+  height: 800px;
+}
 .buttontable{
   width: 180px;
   vertical-align: top;
@@ -5,37 +9,9 @@
 .main_contents{
   width: 600px;
 }
-@media screen and (max-width:1000px){
-.none{
-  display: none;
-}
-.buttontable{
-  display: none;
-}
 .yohaku{
-  display: none;
-}
-.zentai{
-  width: 600px;
-  height: 800px;
+  width: 200px;
 }
 .ueyose{
-  display: none;
-}
-}
-@media screen and (min-width:1001px){
-  .yohaku{
-    width: 200px;
-  }
-  .ueyose{
-    vertical-align: top;
-  }
-  .zentai{
-    width: 1100px;
-    height: 800px;
-  }
-  .buttontable{
-    width: 180px;
-    vertical-align: top;
-  }
+  vertical-align: top;
 }
