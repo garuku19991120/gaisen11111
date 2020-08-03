@@ -7,6 +7,8 @@
 -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/size.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/menu.css">
     <title>PROFILE</title>
 </head>
@@ -22,14 +24,15 @@
         <td>
           <table class="main_contents">
             <tr>
-              <td class="top">
+              <td>
+                <div class="ueyose">
                 <table border="1"class="top">
                   <tr>
                     <td></td>
                   </tr>
                 </table>
               </td>
-              <td class="top">
+              <td>
                 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>
 
                 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>
@@ -46,6 +49,7 @@
               <td>１１１</td>
             </tr>
           </table>
+        </div>
           </td>
           <td class="ueyose">
             <table class="yohaku">

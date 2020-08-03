@@ -7,6 +7,8 @@
 -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/size.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/menu.css">
     <title>GALLERY</title>
 </head>

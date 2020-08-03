@@ -3,6 +3,7 @@
 
 
 echo '
+<div class="kotei">
   <table class="none">
     <tr>
       <td>
@@ -30,5 +31,6 @@ echo '
       </td>
     </tr>
   </table>
+</div>
 ';
 ?>

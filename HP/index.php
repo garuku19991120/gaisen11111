@@ -7,6 +7,7 @@
 -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/size.css">
     <link rel="stylesheet" href="./css/menu.css">
     <title>HOME</title>
 </head>
