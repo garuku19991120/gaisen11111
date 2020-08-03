@@ -5,8 +5,6 @@
   <!--ここは決めた秒数でページを再読み込みする文
     <meta http-equiv="refresh" content="5; URL=">
 -->
-
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -144,19 +142,7 @@
             <table class="yohaku">
               <tr>
                 <td>
-<<<<<<< HEAD
-                <input id="acd-check1" class="acd-check" type="checkbox">
-                  <label class="acd-label" for="acd-check1">
-                    <div id="humberger"class="btn">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </label>
                   <?php include('./php/menu_phone.php'); ?>
-=======
-                <?php include('./php/menu_phone.php'); ?>
->>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
                 </td>
               </tr>
             </table>

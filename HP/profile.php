@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+  <!--ここは決めた秒数でページを再読み込みする文
     <meta http-equiv="refresh" content="5; URL=">
+-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -12,12 +14,7 @@
   <center>
 
 <div class="zentai2">
-<<<<<<< HEAD
-    <table class="zentai">
-
-=======
     <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
->>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
       <tr>
         <td class="buttontable">
           <?php include('./php/menu_main.php'); ?>

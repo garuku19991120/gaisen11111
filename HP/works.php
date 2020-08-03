@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
 <head>
   <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+  <!--ここは決めた秒数でページを再読み込みする文
+    <meta http-equiv="refresh" content="5; URL=">
+-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">

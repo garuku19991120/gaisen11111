@@ -68,11 +68,7 @@
 .btn_url:hover{
   opacity: 0.6;
 }
-<<<<<<< HEAD
 .btn01{
-=======
-.menu01{
->>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
   width:150px;
   height: 50px;
   font-size:20px;
@@ -81,10 +77,7 @@
   text-decoration: none;
   padding : 10px ;
 }
-<<<<<<< HEAD
-.btn01:hover{
-=======
+.btn01:hover{opacity: 0.6;}
 .menu01:hover{
->>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
   opacity: 0.6;
 }
