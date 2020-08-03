@@ -3,17 +3,22 @@
   height: 800px;
 }
 .buttontable{
+<<<<<<< HEAD
   width: 200px;
   vertical-align: top;
   padding-top: 10px;
+=======
+  width: 180px;
+  vertical-align: top;
+>>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
 }
 .main_contents{
   width: 700px;
 }
-.sentaku{
-  width: 300px;
-  font-size: 20px;
+.yohaku{
+  width: 200px;
 }
+<<<<<<< HEAD
 .foom{
   width: 300px;
   height: 30px;
@@ -26,6 +31,10 @@
   width: 150px;
   height:50px;
 
+=======
+.ueyose{
+  vertical-align: top;
+>>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
 }
 .copywrite{
   font-size: 10px;

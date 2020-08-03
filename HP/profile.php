@@ -12,14 +12,18 @@
   <center>
 
 <div class="zentai2">
+<<<<<<< HEAD
     <table class="zentai">
 
+=======
+    <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
+>>>>>>> 531b6d64eb3534fe8d7a6eea8f4e70d778f7eb39
       <tr>
         <td class="buttontable">
           <?php include('./php/menu_main.php'); ?>
         </td>
         <td>
-          <table class="main_contents"boeder="1">
+          <table class="main_contents">
             <tr>
               <td class="top">
                 <table border="1"class="top">
@@ -46,10 +50,10 @@
             </tr>
           </table>
           </td>
-          <td>
+          <td class="ueyose">
             <table class="yohaku">
               <tr>
-                <td></td>
+                <td><?php include('./php/menu_phone.php'); ?></td>
               </tr>
             </table>
           </td>
