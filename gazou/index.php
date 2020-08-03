@@ -45,23 +45,27 @@
         <td>
           <form action="" method="post">
             <input type="file" name="fname">
+
         </td>
         <td>
-          <input type="submit" value="アップロード">
-        </form>
+          <input type="checkbox" name="" value=""id="gazou1"class="botann">
+          <label for="gazou1">ボタン</label>
+          <input type="submit"value="アップロード">
         </td>
       </tr>
       <tr>
         <td>
-          <form action="" method="post" enctype="multipart/form-data">
             <input type="file" name="fname">
         </td>
         <td>
+          <input type="checkbox" name="" value=""id="gazou2"class="botann">
+          <label for="gazou2">ボタン</label>
           <input type="submit" value="アップロード">
         </form>
         </td>
       </tr>
     </table>
+
 <?php
 $tempfile = $_FILES['fname']['tmp_name'];
 $filename = './upimg/' . $_FILES['fname']['name'];

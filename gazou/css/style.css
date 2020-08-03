@@ -51,3 +51,6 @@ label input {
   margin: 10px;
   border: solid 1px silver;
 }
+.botann{
+  display: none;
+}
