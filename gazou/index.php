@@ -3,104 +3,46 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
-      <script type="text/javascript" src="./js/script.js"></script>
-    <title>画像表示設定</title>
+    <link rel="stylesheet" href="./css/size.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>ようこそ</title>
   </head>
   <body>
-    <hr>
-    <table>
+    <div class="link">
+      <h1><a href="">Link1.</a><a href="">Link2.</a></h1>
+    </div>
+
+<form class="" action="" method="post">
+
+    <table border="1"class="fairu">
       <tr>
-        <td></td><td><a href="#">画像表示設定</a></td><td><a href="#">画像表示</a></td>
+        <td><input type="file" name="example" accept="image/*"></td>
+        <td><label for="me"class="sentakunasi">
+          <div class="senntakunasi">
+            表示
+          </div>
+        </label>
+        <input type="checkbox"id="me"class="hyoujinasi"value="off"></td>
+        <td><input type="submit"class="fairu"name="fname"></td>
       </tr>
     </table>
-    <hr>
-    <center>
+    <?php
+    $tempfile = $_FILES['fname']['tmp_name'];
+    $filename = './upimg/' . $_FILES['fname']['name'];
 
+    if (is_uploaded_file($tempfile)) {
+      if ( move_uploaded_file($tempfile , $filename )) {
+        echo $filename . "をアップロードしました。";
+      } else {
+        echo "ファイルをアップロードできません。";
+      }
+    } else {
+      echo "ファイルが選択されていません。";
+    }
+    ?>
 
-      <?php
-        // ドライバ呼び出しを使用して MySQL データベースに接続します
-        $dsn = 'mysql:host=localhost;dbname=mysql';
-        $user = 'root';
-
-        try {
-            $dbh = new PDO($dsn, $user);
-          } catch (PDOException $e) {
-            echo "接続に失敗しました。: " . $e->getMessage() . "\n";
-            exit();
-          }
-
-          echo '<br>';
-          // 素敵な処理
-          $dbh = new PDO($dsn, $user);
-
-          $sql = "SELECT * FROM gazou";
-
-          // SQLステートメントを実行し、結果を変数に格納
-          $stmt = $dbh->query($sql);
-        ?>
-
-
-    <table border="<?php include('./php/tablenumber.php'); ?>">
-      <tr>
-        <td>
-          <form action="" method="post">
-            <input type="file" name="fname">
-
-        </td>
-        <td>
-          <input type="submit"value="アップロード">
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <input type="file" name="fname">
-        </td>
-        <td>
-          <input type="submit" value="アップロード">
-        </form>
-        </td>
-      </tr>
-    </table>
-    <input type="button" value="クリック" onclick="(function(){var e=document.getElementById(‘print’);e.style.display=’block’})()"/>
-    <div id="print" style="display:none">
-    <img src="">
-    </div>
-    <div id="humberger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-<?php
-$tempfile = $_FILES['fname']['tmp_name'];
-$filename = './upimg/' . $_FILES['fname']['name'];
-
-if (is_uploaded_file($tempfile)) {
-  if ( move_uploaded_file($tempfile , $filename )) {
-    echo $filename . "をアップロードしました。";
-  } else {
-    echo "ファイルをアップロードできません。";
-  }
-} else {
-  echo "ファイルが選択されていません。";
-}
-?>
-<?php
-echo $_POST["fname"];
-if ($_POST["fname"] == "true") {
-  // フォームから送信されたデータを各変数に格納
- $timestamp = time();
- $timeday=date("Y-m-d H:i:s", $timestamp);
- $fname = $_POST['fname'];
-$mysqli = new mysqli( "localhost", "root", "", "mysql");
-// SQL(INSERT)を作成
-$sql = "INSERT INTO gazou
- (
-  code, createdate
-) VALUES (
-  '$fname','$timeday'
-)";
-$mysqli->query($sql);
-}
-?>
+</form>
+    <input type="checkbox" class="menuopen">
   </body>
 </html>
