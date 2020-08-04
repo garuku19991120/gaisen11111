@@ -18,19 +18,20 @@
     padding: 0 10px;
     transition: .5s;
     visibility: hidden;
+    text-align: left;
 }
 .acd-check:checked + .acd-label + .acd-content{
     opacity: 100;
     padding: 0px;
     visibility: visible;
 }
+
 .menu_ber{
   width:150px;
   height: 50px;
   font-size:20px;
   font-family: Impact;
-}
-.menu_bar_ctrl{
+  text-align: left;
 }
 #humberger {
   position: relative;
@@ -69,7 +70,7 @@
 .btn_url:hover{
   opacity: 0.6;
 }
-.menu01{
+.btn01{
   width:150px;
   height: 50px;
   font-size:20px;
@@ -78,6 +79,13 @@
   text-decoration: none;
   padding : 10px ;
 }
+.btn01:hover{opacity: 0.6;}
 .menu01:hover{
   opacity: 0.6;
+}
+.kotei{
+  position: fixed;
+}
+.yoha1{
+  width: 49.7%;
 }
