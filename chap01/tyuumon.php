@@ -14,29 +14,16 @@
       <table class="zentai"border="0"><!--全体のテーブル-->
         <tr>
           <td class="botan">
-            <table><!--ボタンを入れてある場所-->
-              <tr>
-                <td><a href="index2.php"class="btn btn-border">商品登録</a></td>
-              </tr>
-              <tr>
-                <td><a href="syouhinkanri.php"class="btn btn-border">商品管理</a></td>
-              </tr>
-              <tr>
-                <td><a href="regi.php"class="btn btn-border">注文入力</a></td>
-              </tr>
-              <tr>
-                <td><a href="tyuumon.php"class="btn btn-border">注文</a></td>
-              </tr>
-              <tr>
-                <td><a href="nyuuryoku.php"class="btn btn-border">入力画面</a></td>
-              </tr>
-              <tr>
-                <td><a href="reji.php"class="btn btn-border">レジ</a></td>
-              </tr>
-            </table><!--ここまでボタンが入れてある場所 -->
+            <?php include('./php/menu.php'); ?>
           </td>
           <td>
             <table class="honbun"><!--ここから本文-->
+              <tr>
+                <td class="taitoru">注文</td>
+              </tr>
+              <tr>
+                <td height="30"></td>
+              </tr>
               <tr>
                 <td class="ueyose">
                   <center>
@@ -122,7 +109,7 @@
                         // 素敵な処理
                         $dbh = new PDO($dsn, $user);
 
-                        $sql = "SELECT * FROM tyuumon";
+                        $sql = "SELECT * FROM nyuuryoku";
 
                         // SQLステートメントを実行し、結果を変数に格納
                         $stmt = $dbh->query($sql);
@@ -131,6 +118,7 @@
                       <tr height="40"class="top">
                       <td width="150">商品名</td>
                       <td width="200">更新日時</td>
+                      <td width="200">個数</td>
                       <td width="150"><input type="button" name="" value="リセット"onClick="reset()"></td>
                       <?php
                         foreach ($stmt as $row) {
@@ -139,7 +127,7 @@
                             echo '</td>';
                             echo '<td class="white">';echo $row['timeday'];
                             echo '</td>';
-                            echo '<td>';
+                            echo '<td class="white">';echo $row['kosuu'];
                             echo '</td>';
                           echo '</tr>';
                         }

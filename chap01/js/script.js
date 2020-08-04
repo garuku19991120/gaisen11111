@@ -41,3 +41,22 @@ function reset(){
     fm.submit();
       }
   }
+
+function okaikei(){
+  if (document.getElementById("oadukari").value >= document.getElementById("goukeikingaku").value){
+    ret = confirm("お会計してもよろしいでしょうか？");
+
+    if (ret == true){
+      document.getElementById("oturi").value=document.getElementById("oadukari").value-document.getElementById("goukeikingaku").value;
+  }
+}else{
+  alert("金額が足りません。")
+}
+  }
+function ryry() {
+  ret = confirm("削除しますか？");
+  if (ret == true){
+  var sakujo = document.getElementById("sakujo");
+    sakujo.submit();
+  }
+}
