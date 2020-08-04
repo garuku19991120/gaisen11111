@@ -22,8 +22,6 @@
 
 <div class="zentai2">
 
-    <table class="zentai" border="1">
-
     <table class="zentai" border="<?php include('./php/tablenumber.php'); ?>">
 
       <tr>
@@ -56,12 +54,12 @@
       </tr>
     </table>
 
-
+  </td>
+</tr>
+</table>
     <div class="">
       <a href="#"></a>
     </div>
-
-    ul>li*3
 
 </div>
   </div>

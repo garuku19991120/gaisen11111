@@ -13,21 +13,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script type="text/javascript" src="./js/script.js"></script>
       <script type="text/javascript">
-      $(function() {
-	setTimeout(function(){
-		$('.start p').fadeIn(1600);
-	},500); //0.5秒後にロゴをフェードイン!
-	setTimeout(function(){
-		$('.start').fadeOut(500);
-	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-});
       </script>
     <title>HOME</title>
 </head>
 <body>
-  <div class="start">
-    <p><img src="image/angular.png"class="startimg"></p>
-</div>
   <center>
 
 <div class="zentai2">
@@ -54,7 +43,6 @@
         </td>
       </tr>
     </table>
-</table>
 </div>
   </div>
   <p><?php include('./php/copywrite.php'); ?></p>
