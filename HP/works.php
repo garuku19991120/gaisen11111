@@ -15,7 +15,7 @@
 </head>
 <body>
   <center>
-
+<?php include('./php/menu_phone.php'); ?>
 <div class="zentai2">
     <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
       <tr>

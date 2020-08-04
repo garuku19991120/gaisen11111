@@ -1,19 +1,16 @@
-/* ここはサイズごとによって表示が変わるものを書いてあげるファイル */
-
-@media screen and (max-width:639px) {
-  .none{
-    display: none;
-  }
-}
-
-@media only screen and (min-width:640px) and (max-width:1023px) {
+@media screen and (max-width:480px) {
 .none{
   display: none;
 }
-}
 
-@media screen and (min-width:1024px) {
+}
+@media screen and (min-width:481px) {
 .none2{
   display: none;
 }
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+
+}
+.none2{
+  margin: auto;
 }
