@@ -51,7 +51,11 @@
 
   <center>
 
-<?php include('./php/menu_phone.php'); ?>
+    <table>
+      <tr>
+        <td class="yoha1"></td><td class="yoha1"></td><td class="yoha2"><?php include('./php/menu_phone.php'); ?></td>
+      </tr>
+    </table>
 <div class="zentai2">
     <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
       <tr>

@@ -1,16 +1,22 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width:640px) {
 .none{
   display: none;
 }
+.yohaku{
+  display: none;
+}
+.buttontable{
+  display: none;
+}
+.main_contents{
+  width:300px;
+}
 
 }
-@media screen and (min-width:481px) {
+@media screen and (min-width:641px) {
 .none2{
   display: none;
 }
   /*　画面サイズが480px以下の場合ここの記述が適用される　*/
 
-}
-.none2{
-  margin: auto;
 }
