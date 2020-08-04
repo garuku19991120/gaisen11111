@@ -19,6 +19,9 @@ echo '
         <td class="menu_ber"><a href="profile.php"class="btn_url">PROFILE</a></td>
       </tr>
       <tr>
+        <td class="menu_ber"><a href="gallery.php"class="btn_url">GALLERY</a></td>
+      </tr>
+      <tr>
         <td class="menu_ber"><a href="works.php"class="btn_url">WORKS</a></td>
       </tr>
       <tr>

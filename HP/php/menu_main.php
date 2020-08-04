@@ -17,7 +17,7 @@ echo '
     </tr>
     <tr>
       <td>
-        <a href="works.php" class="btn01">GALLERY</a>
+        <a href="gallery.php" class="btn01">GALLERY</a>
       </td>
     </tr>
     <tr>

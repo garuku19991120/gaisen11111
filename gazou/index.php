@@ -48,8 +48,6 @@
 
         </td>
         <td>
-          <input type="checkbox" name="" value=""id="gazou1"class="botann">
-          <label for="gazou1">ボタン</label>
           <input type="submit"value="アップロード">
         </td>
       </tr>
@@ -58,14 +56,20 @@
             <input type="file" name="fname">
         </td>
         <td>
-          <input type="checkbox" name="" value=""id="gazou2"class="botann">
-          <label for="gazou2">ボタン</label>
           <input type="submit" value="アップロード">
         </form>
         </td>
       </tr>
     </table>
-
+    <input type="button" value="クリック" onclick="(function(){var e=document.getElementById(‘print’);e.style.display=’block’})()"/>
+    <div id="print" style="display:none">
+    <img src="">
+    </div>
+    <div id="humberger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 <?php
 $tempfile = $_FILES['fname']['tmp_name'];
 $filename = './upimg/' . $_FILES['fname']['name'];
