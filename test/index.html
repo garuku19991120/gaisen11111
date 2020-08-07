@@ -2,16 +2,17 @@
 <html>
  <head>
   <meta charset="utf-8"/>
+  <link rel="stylesheet" href="./scss/style.min.css">
   <script type="application/javascript">
     function draw() {
       var canvas = document.getElementById("canvas");
       if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
 
-        ctx.fillStyle = "rgb(249, 249, 249)";
+        ctx.fillStyle = "rgb(255, 255, 255)";
         ctx.fillRect (0, 0, 1320, 300);
 
-        ctx.fillStyle = "rgb(240, 240, 240)";
+        ctx.fillStyle = "rgb(251, 251, 251)";
         ctx.fillRect (20, 20, 200, 50);//Gの上の横棒
         ctx.fillRect (20, 20, 50, 260);//Gの左の縦棒
         ctx.fillRect (20, 230, 200, 50);//Gの下の横棒
