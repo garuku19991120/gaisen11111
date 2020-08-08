@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "rgb(249, 249, 249)";
+        ctx.fillRect (0, 0, 1320, 300);
+
+        ctx.fillStyle = "rgb(240, 240, 240)";
+        ctx.fillRect (20, 20, 200, 50);//Gの上の横棒
+        ctx.fillRect (20, 20, 50, 260);//Gの左の縦棒
+        ctx.fillRect (20, 230, 200, 50);//Gの下の横棒
+        ctx.fillRect (170, 140, 50, 100);//Gの右の縦棒
+        ctx.fillRect (220, 130, -100, 50);//Gの真ん中の横棒
+
+        ctx.fillRect (260, 20, 200, 50);//A
+        ctx.fillRect (260, 20, 50, 260);
+        ctx.fillRect (410, 20, 50, 260);
+        ctx.fillRect (260, 180, 200, 50);
+
+        ctx.fillRect (520, 20, 50, 260);//i
+
+        ctx.fillRect (620, 20, 200, 50);//S
+        ctx.fillRect (620, 20, 50, 100);
+        ctx.fillRect (770, 20, 50, 80);
+        ctx.fillRect (620, 120, 200, 50);
+        ctx.fillRect (620, 230, 200, 50);
+        ctx.fillRect (770, 160, 50, 100);
+
+        ctx.fillRect (860, 20, 200, 50);//E
+        ctx.fillRect (860, 20, 50, 260);
+        ctx.fillRect (860, 120, 200, 50);
+        ctx.fillRect (860, 230, 200, 50);
+
+        ctx.fillRect (1100, 20, 50, 260);//N
+        ctx.fillRect (1250, 20, 50, 260);
+
+        ctx.beginPath();//Nの斜め線
+          ctx.moveTo(1150, 20);
+          ctx.lineTo(1100, 20);
+          ctx.lineTo(1300, 280);
+          ctx.moveTo(1100, 20);
+          ctx.lineTo(1250, 280);
+          ctx.lineTo(1300, 280);
+          ctx.fill();
+
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="1800" height="300"></canvas>
+
+   <table>
+     <tr>
+       <td><a href="index.html" class="menu">menu1</a></td>
+     </tr>
+     <tr>
+       <td><a href="test2.html" class="menu">menu2</a></td>
+     </tr>
+     <tr>
+       <td><a href="" class="menu">menu3</a></td>
+     </tr>
+   </table>
+ </body>
+</html>
