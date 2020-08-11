@@ -1,0 +1,18 @@
+VScode
+  Prettier　多分保存をしたときに文字を一定の間隔で開けて揃えてくれるやつ
+  TSLint
+  formatting toggle
+  japanese language
+
+
+Atom
+  atom clock　右下に時間を表示するやつ
+  atom-html-preview　プレビュを表示するやつ
+  color-picker　Ctrl+Alt+Cでカラーピッカーが出てくる
+  emmet　button.class[value=""][name=""]{moji}などを入力してTabを押すとhtml入力を省略できるやつ
+  file-icons　ファイルアイコンを表示して見やすくするやつ
+  git-plus　Gitの拡張
+  japanese-menu　日本語
+  markdown-preview-plus　
+  pigments　
+  sass-autocompile　sass、scssファイルを保存時に.min.css形式に直して保存するやつ。容量が少ないから自分的にはすこ
