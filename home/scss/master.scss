@@ -7,22 +7,50 @@ ul {
 }
 .manu_btn{
   text-align: center;
+  height: 100%;
+  background-color: #000000;
   position: absolute;
 }
 .menu_button{
-  background-color: rgb(161, 245, 24);
-  border: 1px solid rgb(177, 177, 177);
+  background-color: #000000;
+  border: 0px solid rgb(177, 177, 177);
   width: 200px;
   height: 50px;
   &.menu_button:hover{
     opacity: 0.5;
+
   }
   a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
   }
+}
+table{
+  border: 1px solid rgb(0, 0, 0);
 }
 .maincontents_table{
   width: 100%;
   height: 500px;
-  border: 1px solid rgb(0, 0, 0);
+}
+.s1 {//pタグにs1というクラスを使うことで横に線を引く命令を与える
+	color: #444;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+.s1:before, .s1:after {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	background: #444;
+	display: block;
+}
+.s1:before {
+	margin-right: .4em;
+}
+.s1:after {
+	margin-left: .4em;
+}
+.menu-space{
+  width:230px !important;
 }
