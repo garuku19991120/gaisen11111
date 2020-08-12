@@ -19,7 +19,7 @@
         <table>
           <tr><td></td></tr>
         </table>
-        <p class="s1">Dummy Text</p>
+        <p class="s1"></p>
       </td>
     </tr>
   </table>

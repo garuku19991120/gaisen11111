@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- PHPファイルで管理するつもりなので後々消してPHPを呼び出す感じに変えると思う。-->
-    <?php include('./php/menu_btn.php'); ?>
+<?php include('./php/menu_btn.php'); ?>
 <!--ここまでmenu_btn-->
 
 <center>
@@ -16,13 +16,62 @@
     <tr>
       <td class="menu-space"></td>
       <td>
-        <table>
-          <tr><td></td></tr>
-        </table>
+        <center>
+          <table class="form-table">
+            <tr>
+              <td>
+                名前
+              </td>
+              <td>
+                <input type="text"name="form1"id="form1"class="form"placeholder="名前を入力してください"/>
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  電話番号
+                </td>
+                <td>
+                  <input type="tel"name="form2"id="form2"class="form"placeholder="000-0000-0000"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  メールアドレス
+                </td>
+                <td>
+                  <input type="url"name="form3"id="form3"class="form"placeholder="アドレスを入力してください"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  数字
+                </td>
+                <td>
+                  <input type="number"name="form4"id="form4"class="form"placeholder="数字を入力してください"value="1112231231313131111"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+
+                </td>
+                <td>
+                  <input type="text"name="form5"id="form5"class="form"placeholder="日付を入力してください"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+
+                </td>
+                <td>
+                  <textarea name="form6" id="form6"class="form"></textarea>
+                </td>
+              </tr>
+            </table>
+
         <p class="s1">Dummy Text</p>
       </td>
     </tr>
   </table>
-    <p><?php include('./php/copywrite.php'); ?></p>
+
   </body>
 </html>

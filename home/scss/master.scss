@@ -12,6 +12,12 @@ body {
   height: 100%;
   background-color: $sub_color;
   position: absolute;
+  .copywrite{
+    vertical-align: bottom;
+    text-align: center;
+    color: $main_color;
+  }
+
 }
 .menu {
   //メニューボタンは英語のみ
@@ -50,4 +56,12 @@ table {
 }
 .menu-space {
   width: 230px !important;
+}
+.form{
+  height: 10%;
+  width: 100%;
+  font-size: 20px;
+}
+.form-table{
+  width: 50%;
 }
