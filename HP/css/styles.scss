@@ -1,6 +1,10 @@
 $main_color: rgb(255, 255, 255);
 $sub_color: rgb(0, 255, 232);
+<<<<<<< HEAD
 $font_color: rgb(0, 0, 0);
+=======
+$font_color: rgb(255, 255, 255);
+>>>>>>> d1201a69cf9a6414aaece28cfc5de4807ffbb302
 $bunsyou:18px;
 $taitoru:20px;
 
@@ -27,6 +31,7 @@ body{
   background-color: $sub_color;
   width: auto;
 }
+<<<<<<< HEAD
 .main_contents{
 width:auto;
 }
@@ -43,3 +48,5 @@ width:auto;
 .pro_bun{
   font-size: 14px;
 }
+=======
+>>>>>>> d1201a69cf9a6414aaece28cfc5de4807ffbb302

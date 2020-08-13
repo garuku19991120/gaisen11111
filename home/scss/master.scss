@@ -1,0 +1,79 @@
+$main_color: rgb(255, 255, 255);
+$sub_color: rgb(0, 0, 0);
+$font: impact;
+
+body {
+  background-color: $main_color;
+}
+.manu_btn {
+  font-family: impact;
+  text-align: center;
+  height: 100%;
+  background-color: $sub_color;
+  position: absolute;
+}
+.copywrite{
+  margin: 100% 0%;
+  text-align: center;
+  color: $main_color;
+}
+.menu {
+  //メニューボタンは英語のみ
+  font-family: $font;
+  text-decoration: none;
+  color: $main_color;
+  font-size: 20px;
+}
+.menu:hover {
+  opacity: 0.5;
+}
+table {
+  border: 0px solid $sub_color;
+}
+.maincontents_table {
+  width: 100%;
+  height: 500px;
+}
+.s1 {
+  //pタグにs1というクラスを使うことで横に線を引く命令を与える
+  color: #444;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.s1:before,
+.s1:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #444;
+  display: block;
+}
+.s1:before {
+  margin-right: 0.4em;
+}
+.s1:after {
+  margin-left: 0.4em;
+}
+.menu-space {
+  width: 260px !important;
+}
+.form{
+  height: 10%;
+  width: 100%;
+  font-size: 20px;
+}
+.form-table{
+  width: 50%;
+}
+.work_table{
+  width: 100%;
+}
+.top{
+  width: 150px;
+  height: 150px;
+  vertical-align: top;
+}
+.name{
+  font-size: 150%;
+}
