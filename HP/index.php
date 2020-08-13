@@ -6,11 +6,23 @@
     <meta http-equiv="refresh" content="5; URL=">
 -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/size.css">
     <link rel="stylesheet" href="./css/start.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: false,
+                pause: 5000,
+            });
+        });
+
+</script>
       <script type="text/javascript" src="./js/script.js"></script>
       <script type="text/javascript">
       </script>
@@ -30,18 +42,26 @@
         <td class="buttontable">
           <?php include('./php/menu_main.php'); ?>
         </td>
-        <td>
-          <table class="main_contents">
+        <td class="ueyose">
+
+          <table border="<?php include('./php/tablenumber.php'); ?>"class="main_contents">
             <tr>
-              <td></td>
+              <td>
+                <div class="slider">
+                  <img src="./image/gazou1.png"alt="">
+                  <img src="./image/gazou1.png"alt="">
+                  <img src="./image/gazou1.png"alt="">
+                  <img src="./image/gazou1.png"alt="">
+                </div>
+              </td>
             </tr>
           </table>
 
-          <td class="ueyose">
-                  <table class="yohaku">
-                    <tr>
-                      <td><?php include('./php/menu_phone.php'); ?></td>
-                    </tr>
+            <td class="ueyose">
+                <table class="yohaku">
+                  <tr>
+                    <td><?php include('./php/menu_phone.php'); ?></td>
+                  </tr>
                   </table>
           </td>
         </td>

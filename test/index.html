@@ -8,14 +8,14 @@
       if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
 
-        ctx.fillStyle = "rgb(249, 249, 249)";
+        ctx.fillStyle ="#ffffff"
         ctx.fillRect (0, 0, 1320, 300);
 
-        ctx.fillStyle = "rgb(240, 240, 240)";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.26)";
         ctx.fillRect (20, 20, 200, 50);//Gの上の横棒
         ctx.fillRect (20, 20, 50, 260);//Gの左の縦棒
         ctx.fillRect (20, 230, 200, 50);//Gの下の横棒
-        ctx.fillRect (170, 140, 50, 100);//Gの右の縦棒
+        ctx.fillRect (170, 130, 50, 150);//Gの右の縦棒
         ctx.fillRect (220, 130, -100, 50);//Gの真ん中の横棒
 
         ctx.fillRect (260, 20, 200, 50);//A
@@ -30,7 +30,7 @@
         ctx.fillRect (770, 20, 50, 80);
         ctx.fillRect (620, 120, 200, 50);
         ctx.fillRect (620, 230, 200, 50);
-        ctx.fillRect (770, 160, 50, 100);
+        ctx.fillRect (770, 120, 50, 160);
 
         ctx.fillRect (860, 20, 200, 50);//E
         ctx.fillRect (860, 20, 50, 260);

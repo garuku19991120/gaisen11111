@@ -6,11 +6,11 @@
         <meta http-equiv="refresh" content="5; URL=">
     -->
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/size.css">
         <link rel="stylesheet" href="./css/start.css">
         <link rel="stylesheet" href="./css/menu.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script type="text/javascript" src="./js/script.js"></script>
           <script type="text/javascript">
           $(function() {
@@ -22,14 +22,77 @@
     	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
     });
           </script>
+
+          <script type="application/javascript">
+            function draw() {
+              var canvas = document.getElementById("canvas");
+              if (canvas.getContext) {
+                var ctx = canvas.getContext("2d");
+
+                ctx.fillStyle ="#ffffff"
+                ctx.fillRect (0, 0, 1320, 300);
+
+                ctx.fillStyle = "rgb(0, 0, 0)";
+                ctx.fillRect (20, 20, 200, 50);//Gの上の横棒
+                ctx.fillRect (20, 20, 50, 260);//Gの左の縦棒
+                ctx.fillRect (20, 230, 200, 50);//Gの下の横棒
+                ctx.fillRect (170, 130, 50, 150);//Gの右の縦棒
+                ctx.fillRect (220, 130, -100, 50);//Gの真ん中の横棒
+
+                ctx.fillRect (260, 20, 200, 50);//A
+                ctx.fillRect (260, 20, 50, 260);
+                ctx.fillRect (410, 20, 50, 260);
+                ctx.fillRect (260, 180, 200, 50);
+
+                ctx.fillRect (520, 20, 50, 260);//i
+
+                ctx.fillRect (620, 20, 200, 50);//S
+                ctx.fillRect (620, 20, 50, 100);
+                ctx.fillRect (770, 20, 50, 80);
+                ctx.fillRect (620, 120, 200, 50);
+                ctx.fillRect (620, 230, 200, 50);
+                ctx.fillRect (770, 120, 50, 160);
+
+                ctx.fillRect (860, 20, 200, 50);//E
+                ctx.fillRect (860, 20, 50, 260);
+                ctx.fillRect (860, 120, 200, 50);
+                ctx.fillRect (860, 230, 200, 50);
+
+                ctx.fillRect (1100, 20, 50, 260);//N
+                ctx.fillRect (1250, 20, 50, 260);
+
+                ctx.beginPath();//Nの斜め線
+                  ctx.moveTo(1150, 20);
+                  ctx.lineTo(1100, 20);
+                  ctx.lineTo(1300, 280);
+                  ctx.moveTo(1100, 20);
+                  ctx.lineTo(1250, 280);
+                  ctx.lineTo(1300, 280);
+                  ctx.fill();
+
+              }
+            }
+          </script>
         <title>HOME</title>
   </head>
-  <body>
+  <body onload="draw();">
+    <div class="ookisa">
+
     <div class="start">
-      <p><img src="image/angular.png"class="startimg"></p>
+      <p>
+
+        <canvas id="canvas" width="1800" height="300"></canvas>
+
+      </p>
   </div>
+</div>
+<!--ここから仮の姿のHPを出力（透ける時に見せるやつ）-->
+
+
+
+
   <script type="text/javascript">
-  setTimeout(function(){
+  setTimeout(function(){//三秒後にindex,phpに飛ぶ文
      location.href = "./index.php";
 },3000);
   </script>

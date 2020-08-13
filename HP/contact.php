@@ -7,7 +7,7 @@
 -->
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/size.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/form.css">
@@ -59,16 +59,21 @@
 <div class="zentai2">
     <table class="zentai"border="<?php include('./php/tablenumber.php'); ?>">
       <tr>
-        <td class="buttontable">
+        <td class="buttontable"border="<?php include('./php/tablenumber.php'); ?>">
           <?php include('./php/menu_main.php'); ?>
         </td>
         <td>
+<p>■現在お仕事を募集しております。<br>
 
+ご用がありましたらお手数をお掛け致しますが <br>こちらのページのご記入をお願いいたします。<br>
+<br>
+</p>
           <center>
-            <table class="main_contents">
+            
+            <table class="main_contents"border="<?php include('./php/tablenumber.php'); ?>">
               <tr>
                 <td>
-                  <table border="0">
+                  <table border="0"border="<?php include('./php/tablenumber.php'); ?>">
                     <form name="formName" method="post" action="">
                     <tr>
                       <td class="foom"><label for="name">お名前</label></td>

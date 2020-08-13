@@ -9,14 +9,17 @@
 }
 .start p {
 	position: fixed;
-	left: 50%;
+	left: 25%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	display: none;
 	z-index: 9999;
-	width: 280px;
+	width: 25%;
 }
 .startimg{
   width:300px;
   height:auto;
+}
+canvas{
+	width:400%;
 }
