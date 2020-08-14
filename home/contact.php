@@ -7,6 +7,30 @@
     <title>CONTACT</title>
   </head>
   <body>
+    <?php
+      mb_language("Japanese");
+      mb_internal_encoding("UTF-8");
+
+    	if ($_POST['switch']== "1") {
+        $mailbody = "
+      ●お名前\n".
+      $_POST['form1']."\n
+      メールアドレス\n".
+      $_POST['form2']."\n
+      電話番号\n".
+      $_POST['form3']."\n
+      ご予算\n".
+      $_POST['form4']."\n
+      ホームページ\n".
+      $_POST['form5'];
+
+        $to = 'garuku@ours-llc.com';
+        $subject = "こんにちは".$name;
+        $message = $mailbody;
+        $headers = "From: garuku@ours-llc.com";
+    mb_send_mail($to, $subject, $message, $headers);
+  }
+     ?>
     <!-- PHPファイルで管理するつもりなので後々消してPHPを呼び出す感じに変えると思う。-->
 <?php include('./php/menu_btn.php'); ?>
 <!--ここまでmenu_btn-->
@@ -17,7 +41,7 @@
       <td class="menu-space"></td>
       <td>
         <center>
-        お問い合わせ
+        <p>お問い合わせ</p>
         <form class="mail" action="" method="post">
       <input type="hidden" name="switch"value="0"id="switch_form">
       <table>
@@ -38,20 +62,16 @@
           <td><input type="text"name="form4"id="form4"class="form"placeholder="ご予算を入力してください"/></td>
         </tr>
         <tr>
-          <td>貴社のホームページ</td>
-          <td><input type="text"name="form4"id="form4"class="form"placeholder="ご予算を入力してください"/></td>
-        </tr>
-        <tr>
           <td>希望納期</td>
-          <td><input type="text"name="form4"id="form4"class="form"placeholder="ご予算を入力してください"/></td>
+          <td><input type="text"name="form5"id="form5"class="form"placeholder="ご予算を入力してください"/></td>
         </tr>
         <tr>
           <td>ご予算</td>
-          <td><input type="text"name="form4"id="form4"class="form"placeholder="ご予算を入力してください"/></td>
+          <td><input type="text"name="form6"id="form6"class="form"placeholder="ご予算を入力してください"/></td>
         </tr>
         <tr>
-          <td>ホームページ</td>
-          <td><textarea name="form5"id="form5"class="form"/></textarea></td>
+          <td>お問い合わせ内容</td>
+          <td><textarea name="form7"id="form7"class="form"/></textarea></td>
         </tr>
         <tr>
           <td></td>
