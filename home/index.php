@@ -32,11 +32,11 @@
           <tr>
             <td>
               <div class="slider">
-  <img src="./image/gazou1.png" width="500" height="300" alt="">
-  <img src="gazou2.png" width="500" height="300" alt="">
-  <img src="gazou3.png" width="500" height="300" alt="">
-  <img src="gazou4.png" width="500" height="300" alt="">
-  </div>
+                <img src="./image/gazou1.jpg" width="400">
+                <img src="./image/gazou1.png" width="400">
+                <img src="./image/gazou1.png" width="400">
+                <img src="./image/gazou1.png" width="400">
+              </div>
           </td>
         </tr>
         </table>
