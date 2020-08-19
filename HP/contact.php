@@ -69,7 +69,7 @@
 <br>
 </p>
           <center>
-            
+
             <table class="main_contents"border="<?php include('./php/tablenumber.php'); ?>">
               <tr>
                 <td>
@@ -122,26 +122,6 @@
                       <td class="foom"><label for="yosan">ご予算</label></td>
                       <td class="foom">
                         <input type="text" name="" placeholder="ご予算を入力してください"class="fome"tabindex="1"id="yosan">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="foom"><label>好きな食べ物のジャンルは？</label></td>
-                      <td class="foom">
-                        <select name = "selectName1" onChange="functionName()"class="sentaku">
-                          <option value = "0"></option>
-                          <option value = "1">くだもの</option>
-                          <option value = "2">やさい</option>
-                          <option value = "3">にくるい</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="foom">
-                        そのジャンル内で何が特に好きですか？
-                      </td>
-                      <td class="foom">
-                        <select name = "selectName2"class="sentaku">
-                        </select>
                       </td>
                     </tr>
                   </table>

@@ -19,10 +19,14 @@
       $_POST['form2']."\n
       電話番号\n".
       $_POST['form3']."\n
-      ご予算\n".
+      貴社のホームページ\n".
       $_POST['form4']."\n
-      ホームページ\n".
-      $_POST['form5'];
+      希望納期\n".
+      $_POST['form5']."\n
+      ご予算\n".
+      $_POST['form6']."\n
+      お問い合わせ内容\n".
+      $_POST['form7'];
 
         $to = 'garuku@ours-llc.com';
         $subject = "こんにちは".$name;
@@ -59,11 +63,11 @@
         </tr>
         <tr>
           <td>貴社のホームページ</td>
-          <td><input type="text"name="form4"id="form4"class="form"placeholder="ご予算を入力してください"/></td>
+          <td><input type="text"name="form4"id="form4"class="form"placeholder="URLを入力してください"/></td>
         </tr>
         <tr>
           <td>希望納期</td>
-          <td><input type="text"name="form5"id="form5"class="form"placeholder="ご予算を入力してください"/></td>
+          <td><input type="text"name="form5"id="form5"class="form"placeholder="ご希望納期を入力してください"/></td>
         </tr>
         <tr>
           <td>ご予算</td>

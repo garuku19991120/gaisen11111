@@ -32,10 +32,10 @@
           <tr>
             <td>
               <div class="slider">
-                <img src="./image/gazou1.jpg" width="400">
-                <img src="./image/gazou1.png" width="400">
-                <img src="./image/gazou1.png" width="400">
-                <img src="./image/gazou1.png" width="400">
+                <img src="./image/gazou1.png" width="400"height="300"style="object-fit: cover;">
+                <img src="./image/gazou1.png" width="400"height="300"style="object-fit: cover;">
+                <img src="./image/gazou1.png" width="400"height="300"style="object-fit: cover;">
+                <img src="./image/gazou1.png" width="400"height="300"style="object-fit: cover;">
               </div>
           </td>
         </tr>

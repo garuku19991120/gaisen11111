@@ -29,10 +29,6 @@
       ホームページ\n".
       $_POST['form5'];
 
-
-        $mail=$_POST['form2'];
-        $name=$_POST['form1'];
-        $mail=$_POST['form2'];
         $to = 'garuku@ours-llc.com';
         $subject = "こんにちは".$name;
         $message = $mailbody;
