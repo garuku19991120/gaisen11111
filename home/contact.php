@@ -3,6 +3,14 @@
   <head>
     <meta http-equiv="refresh" content="<?php include('./php/rel.php'); ?>; URL=" />
     <link rel="stylesheet" href="./scss/master.css"/>
+    <script type="text/javascript">
+      function sousin(){
+        var ret=confirm("送信してよろしいでしょうか？");
+        if(ret==true){
+          
+        }
+      }
+    </script>
     <meta charset="utf-8" />
     <title>CONTACT</title>
   </head>

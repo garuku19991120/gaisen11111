@@ -75,9 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
           					$dbh = new PDO($dsn, $user);
 
-          					$sql = "SELECT count(*) as cnt FROM syouhin where id=".$id;
-
-          					// SQLステートメントを実行し、結果を変数に格納
+          					$sql = "SELECT count(*) as cnt FROM img_info;
           					$stmt = $dbh->query($sql);
           					// foreach文で配列の中身を一行ずつ出力
           					foreach ($stmt as $row) {
