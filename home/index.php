@@ -15,7 +15,8 @@
                 });
             });
     </script>
-    <link rel="stylesheet" href="./scss/master.css"/>
+    <link rel="stylesheet" href="./scss/master.min.css"/>
+    <link rel="stylesheet" href="./scss/responsive.min.css"/>
     <meta charset="utf-8" />
     <title>HOME</title>
   </head>
