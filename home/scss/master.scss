@@ -10,7 +10,7 @@ body {
   text-align: center;
   height: 100%;
   background-color: $sub_color;
-  position: absolute;
+  position: fixed;
 }
 .copywrite{
   margin: 100% 0%;
@@ -77,20 +77,25 @@ table {
 .name{
   font-size: 150%;
 }
-.gal_contents{
-  .gal_col{
-    width: auto;
-    height: auto;
-  }
-  .gal_row{
-    width: auto;
-    height: auto;
-  }
+//ここからgalleryの画像を縦に配置する
+//内容としてはリストを二列に配置してその中に画像を入れ、リストの表記を消したものになる。
+.center {
+  margin:0 auto;
+  text-align:center;
 }
-
-.gal_img{
-  margin: 10px;
-  padding:10px;
-  width: 150%;
-  height: 150%;
+.center ul,.center ul li ol {
+  list-style-type:none;
 }
+.center ul li {
+  display:inline-block;
+  vertical-align:top;
+}
+.center ul li ol li {
+  display:list-item;
+  padding:30px;
+}
+.center ul li ol li img {
+  width:300px;
+  height:auto;
+}
+//ここまでがgalleryの画像配置文

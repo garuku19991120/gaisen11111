@@ -1,0 +1,101 @@
+body{
+  background-color: rgb(227, 227, 227);
+}
+textarea{
+  box-shadow: 10px 10px 10px rgb(208, 208, 208)inset,
+  -10px -10px 10px rgb(235, 235, 235)inset;
+  background-color: rgb(227, 227, 227);
+  border-radius: 30px;
+  border:none;
+  padding: 30px;
+  font-size: 18px;
+
+}
+.task{
+  background-color: rgb(227, 227, 227);
+  box-shadow: 10px 10px 10px rgb(208, 208, 208),
+  -10px -10px 10px rgb(235, 235, 235);
+  border-radius: 30px;
+  position: fixed;
+  width: 250px;
+  height:300px;
+  margin: 15% 0%;
+}
+.menu{
+  margin:20% 7%;
+}
+.button{
+  margin: 20px 0px;
+  width: 200px;
+  height: 50px;
+  border:none;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px rgb(208, 208, 208),
+  -10px -10px 10px rgb(235, 235, 235);
+  border-radius: 30px;
+  background-color: rgb(227, 227, 227);
+}
+.button:hover{
+  box-shadow: 10px 10px 10px rgb(208, 208, 208)inset,
+  -10px -10px 10px rgb(235, 235, 235)inset;
+  background-color: rgb(227, 227, 227);
+}
+.button_active{
+  margin: 20px 0px;
+  width: 200px;
+  height: 50px;
+  border:none;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px rgb(208, 208, 208),
+  -10px -10px 10px rgb(235, 235, 235);
+  border-radius: 30px;
+  background-color: rgb(227, 227, 227);
+}
+.button_active:hover{
+  box-shadow: 10px 10px 10px rgb(208, 208, 208)inset,
+  -10px -10px 10px rgb(235, 235, 235)inset;
+  background-color: rgb(227, 227, 227);
+}
+.input_table{
+  margin: auto;
+  margin-top: 50px;
+}
+.byousuu{
+  height:50px;
+  width:50px;
+  font-size: 20px;
+  text-align: center;
+}
+.mannaka{
+  margin: auto;
+}
+.tyuuou{
+  text-align: center;
+}
+.batten{
+  height:50px;
+  width:50px;
+}
+.hyouji{
+  height:50px;
+  width:50px;
+}
+.file_input{
+  font-size: 18px;
+}
+.batu_btn{
+  position: fixed;
+  margin:0% 70%;
+  border:none;
+  font-size: 30px;
+}
+.batu_btn:hover{
+  box-shadow: 10px 10px 10px rgb(208, 208, 208)inset,
+  -10px -10px 10px rgb(235, 235, 235)inset;
+  background-color: rgb(227, 227, 227);
+}
+.img_out{
+  margin: 1% 30%;
+  height: 900px;
+  opacity: 1;
+}
