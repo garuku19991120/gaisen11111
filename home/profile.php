@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
     <meta http-equiv="refresh" content="<?php include('./php/rel.php'); ?>; URL=" />
     <link rel="stylesheet" href="./scss/master.css"/>
     <meta charset="utf-8" />
@@ -35,7 +36,7 @@
 
               </td>
               <td></td>
-              
+
             </tr>
             <tr class="kuuhgakugyou">
               <td></td>
@@ -56,7 +57,7 @@
                 Adobe Photoshop、Adobe Illustrator、Adobe Dreamweaver、Adobe InDesign、
                 CLIP STUDIO PAINT、Paint Tool SAI、Live2D<br>AviUtl、Blender、Atom、
                 Visual Studio Code、Studio One4<br>
-              </p></td>  
+              </p></td>
             </tr>
           </table>
 

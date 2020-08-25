@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
     <meta http-equiv="refresh" content="<?php include('./php/rel.php'); ?>; URL=" />
     <link rel="stylesheet" href="./scss/master.css"/>
     <meta charset="utf-8" />
@@ -15,7 +16,7 @@
   <table border="1" class="maincontents_table">
     <tr>
       <td class="menu-space">
-        
+
       </td>
       <td>
         <table class="work_table">

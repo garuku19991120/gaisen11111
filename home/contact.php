@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
     <meta http-equiv="refresh" content="<?php include('./php/rel.php'); ?>; URL=" />
     <link rel="stylesheet" href="./scss/master.css"/>
     <script type="text/javascript">
       function sousin(){
         var ret=confirm("送信してよろしいでしょうか？");
         if(ret==true){
-          
+
         }
       }
     </script>

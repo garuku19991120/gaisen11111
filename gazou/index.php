@@ -100,19 +100,12 @@ $res = $dbh->query($sql);
 
 // 値を取得
 ?>
-  <?php
+<form enctype="multipart/form-data"  action="ppap.php" method="POST">
+  <input type="hidden" name="name" value="value" />
+  アップロード: <input name="userfile" type="file" />
+  <input type="submit" value="ファイル送信" />
+</form>
 
-
-  // ファイルへのパス
-  $path = './img/';
-  // ファイルがアップロードされているかと、POST通信でアップロードされたかを確認
-  if( !empty($_FILES['file_input']) && is_uploaded_file($_FILES['file_input']) ) {
-  	// ファイルを指定したパスへ保存する
-    	if( move_uploaded_file( $_FILES['file_input'], $path.'upload_pic.jpg') ){
-      echo 'アップロードされたファイルを保存しました。';	}
-      else {
-      echo 'アップロードされたファイルの保存に失敗しました。';	}}
-   ?>
   <form action="" method="post">
 
     <!-- ここから画像インプット -->
@@ -148,6 +141,14 @@ $res = $dbh->query($sql);
       </tr>
     </table>
 <!-- ここまでがインプットのボタン -->
+<script type="text/javascript">
+// HTMLInputElement オブジェクトを作成する
+var element = document.createElement("input");
+// コントロールタイプを「ファイル選択」に設定する
+input_file.type = "file";
+// 出力テスト
+console.log(element);
+</script>
 </form>
 </body>
 </html>
