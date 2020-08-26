@@ -2,7 +2,7 @@ $main_color: rgb(255, 255, 255);
 $sub_color: rgb(0, 0, 0);
 $font: impact;
 //PC向けサイズ
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1243px){
   .menu {
     //メニューボタンは英語のみ
     font-family: $font;
@@ -23,7 +23,7 @@ $font: impact;
 }
 
 //スマホ向けサイズ
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1242px){
   .menu{
     display: none;
   }

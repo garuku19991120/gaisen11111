@@ -5,15 +5,17 @@
     <meta http-equiv="refresh" content="<?php include('./php/rel.php'); ?>; URL=" />
     <link rel="stylesheet" href="./scss/master.min.css" />
     <link rel="stylesheet" href="./scss/responsive.min.css"/>
+    <link rel="stylesheet" href="./scss/menu.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
     <meta charset="utf-8" />
     <title>GALLERY</title>
   </head>
   <body>
    <?php include('./php/menu_btn.php'); ?><!--メニューボタン-->
-
-
+   <?php include('./php/phone.php'); ?>
 <center>
-  <table border="1" class="maincontents_table">
+  <table border="0" class="maincontents_table">
     <tr>
       <td class="menu-space"></td>
       <td>
