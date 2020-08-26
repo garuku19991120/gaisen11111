@@ -5,6 +5,7 @@
     <meta http-equiv="refresh" content="<?php include('./php/rel.php'); ?>; URL=" />
     <link rel="stylesheet" href="./scss/master.min.css"/>
     <link rel="stylesheet" href="./scss/responsive.min.css"/>
+        <link rel="stylesheet" href="./scss/menu.min.css"/>
     <meta charset="utf-8" />
     <title>PROFILE</title>
   </head>
