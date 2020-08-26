@@ -5,24 +5,10 @@ $font: impact;
 body {
   background-color: $main_color;
 }
-.manu_btn {
-  font-family: impact;
-  text-align: center;
-  height: 100%;
-  background-color: $sub_color;
-  position: fixed;
-}
 .copywrite{
   margin: 100% 0%;
   text-align: center;
   color: $main_color;
-}
-.menu {
-  //メニューボタンは英語のみ
-  font-family: $font;
-  text-decoration: none;
-  color: $main_color;
-  font-size: 20px;
 }
 .menu:hover {
   opacity: 0.5;
@@ -54,9 +40,6 @@ table {
 }
 .s1:after {
   margin-left: 0.4em;
-}
-.menu-space {
-  width: 260px !important;
 }
 .form{
   height: 10%;
