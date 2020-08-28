@@ -13,7 +13,9 @@
   </head>
   <body>
    <?php include('./php/menu_btn.php'); ?><!--メニューボタン-->
+   <div class="phone_menu">
    <?php include('./php/phone.php'); ?>
+   </div>
 <center>
   <table border="0" class="maincontents_table">
     <tr>

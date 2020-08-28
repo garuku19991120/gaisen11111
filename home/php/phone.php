@@ -11,7 +11,7 @@ echo '
     </div>
   </label>
   <div class="acd-content">
-    <table border="0">
+    <table border="0"class="menu_table">
       <tr>
         <td class="menu_ber"><a href="index.php"class="btn_url">HOME</a></td>
       </tr>
@@ -26,6 +26,9 @@ echo '
       </tr>
       <tr>
         <td class="menu_ber"><a href="contact.php"class="btn_url">CONTACT</a></td>
+      </tr>
+      <tr class="yohaku_menu">
+      <td></td>
       </tr>
     </table>
   </div>

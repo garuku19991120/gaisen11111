@@ -1,7 +1,11 @@
 .acd-check {
   display: none;
 }
-
+.menu_table{
+  background-color: rgb(255, 255, 255) ;
+  height:1000px;
+position: fixed;
+}
 .acd-label {
   background: #fff;
   color: #fff;
@@ -13,21 +17,23 @@
 }
 .acd-content {
   border: 0px solid #333;
-  height: 0;
   opacity: 0;
   padding: 0 10px;
   transition: 0.5s;
   visibility: hidden;
   text-align: left;
 }
+
 .acd-check:checked + .acd-label + .acd-content {
   opacity: 100;
   padding: 0px;
   visibility: visible;
 }
-
+.yohaku_menu{
+  height:600px;
+}
 .menu_ber {
-  width: 500%;
+  height:100px;
   font-family: Impact;
   text-align: left;
 }
@@ -35,12 +41,13 @@
   position: fixed;
   height: 24px;
   width: 24px;
+  margin-top: 10px;
   display: inline-block;
   box-sizing: border-box;
 }
 #humberger div {
   position: absolute;
-  left: 0;
+  left: 10;
   height: 4px;
   width: 24px;
   background-color: #444;
@@ -63,6 +70,8 @@
 .btn_url {
   color: #000;
   text-decoration: none;
+  font-size: 50px;
+
   padding: 10px;
 }
 .btn_url:hover {
@@ -71,7 +80,6 @@
 .btn01 {
   width: 150px;
   height: 50px;
-  font-size: 20px;
   font-family: Impact;
   color: #000;
   text-decoration: none;
@@ -85,6 +93,7 @@
 }
 .kotei {
   position: fixed;
+  z-index: 1000;
 }
 .yoha1 {
   width: 49.7%;

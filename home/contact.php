@@ -48,7 +48,9 @@
      ?>
     <!-- PHPファイルで管理するつもりなので後々消してPHPを呼び出す感じに変えると思う。-->
 <?php include('./php/menu_btn.php'); ?>
+<div class="phone_menu">
 <?php include('./php/phone.php'); ?>
+</div>
 <!--ここまでmenu_btn-->
 
 <center>

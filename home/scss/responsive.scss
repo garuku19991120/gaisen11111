@@ -20,8 +20,10 @@ $font: impact;
     background-color: $sub_color;
     position: fixed;
   }
+  .phone_menu{
+    display: none;
+  }
 }
-
 //スマホ向けサイズ
 @media screen and (max-width: 1242px){
   .menu{
