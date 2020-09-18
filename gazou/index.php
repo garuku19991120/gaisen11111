@@ -82,14 +82,11 @@ $dbh = null;
   $dbh = null;
   ?>
 <?php
-
 // ドライバ呼び出しを使用して MySQL データベースに接続します
 $sql = null;$res = null;$dbh = null;
-
 $dsn = 'mysql:dbname=mysql;host=localhost;charset=utf8';
 $user = 'root';
 $password = '';
-
 try {
     $dbh  = new PDO($dsn, $user, $password);
 } catch (PDOException $e) {
@@ -97,13 +94,11 @@ try {
 }
 $sql = "SELECT * FROM img_info_dtl";
 $res = $dbh->query($sql);
-
 // 値を取得
 ?>
-<form enctype="multipart/form-data"  action="ppap.php" method="POST">
-  <input type="hidden" name="name" value="value" />
-  アップロード: <input name="userfile" type="file" />
-  <input type="submit" value="ファイル送信" />
+<form method="post" action="ppap.php" enctype="multipart/form-data">
+ファイル:<input type="file" name="up_file"><br>
+<input type="submit" value="upload">
 </form>
 
   <form action="" method="post">
@@ -140,6 +135,7 @@ $res = $dbh->query($sql);
         <td colspan="4"class="tyuuou"><input type="submit" value="送信"class="button"onclick="sousin()"></td>
       </tr>
     </table>
+
 <!-- ここまでがインプットのボタン -->
 <script type="text/javascript">
 // HTMLInputElement オブジェクトを作成する
@@ -150,5 +146,8 @@ input_file.type = "file";
 console.log(element);
 </script>
 </form>
+<div class="maru">
+aaa
+</div>
 </body>
 </html>

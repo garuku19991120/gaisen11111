@@ -3,23 +3,8 @@ $sub_color: rgb(0, 0, 0);
 $font: impact;
 //PC向けサイズ
 @media screen and (min-width: 1243px){
-  .menu {
-    //メニューボタンは英語のみ
-    font-family: $font;
-    text-decoration: none;
-    color: $main_color;
-    font-size: 20px;
-  }
-  .menu-space {
-    width: 260px !important;
-  }
-  .manu_btn {
-    font-family: impact;
-    text-align: center;
-    height: 100%;
-    background-color: $sub_color;
-    position: fixed;
-  }
+
+
   .phone_menu{
     display: none;
   }
@@ -32,7 +17,7 @@ $font: impact;
   .menu-space {
     display: none;
   }
-  .manu_btn {
+  .menu_btn {
     display: none;
   }
 }
