@@ -1,74 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
-  <!--ここは決めた秒数でページを再読み込みする文
-    <meta http-equiv="refresh" content="5; URL=">
--->
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/size.css">
-    <link rel="stylesheet" href="./css/start.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: false,
-                pause: 5000,
-            });
-        });
-
-</script>
-      <script type="text/javascript" src="./js/script.js"></script>
-      <script type="text/javascript">
-      </script>
-    <title>HOME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/master.min.css">
+  <title>test</title>
 </head>
 <body>
-  <center>
-    <table>
-      <tr>
-        <td class="yoha1"></td><td class="yoha1"></td><td class="yoha2"><?php include('./php/menu_phone.php'); ?></td>
-      </tr>
-    </table>
-<div class="zentai2">
-    <table class="zentai" border="<?php include('./php/tablenumber.php'); ?>">
-
-      <tr>
-        <td class="buttontable">
-          <?php include('./php/menu_main.php'); ?>
-        </td>
-        <td class="ueyose">
-
-          <table border="<?php include('./php/tablenumber.php'); ?>"class="main_contents">
-            <tr>
-              <td>
-                <div class="slider">
-                  <img src="./image/gazou1.png"alt="">
-                  <img src="./image/gazou1.png"alt="">
-                  <img src="./image/gazou1.png"alt="">
-                  <img src="./image/gazou1.png"alt="">
-                </div>
-              </td>
-            </tr>
-          </table>
-
-            <td class="ueyose">
-                <table class="yohaku">
-                  <tr>
-                    <td><?php include('./php/menu_phone.php'); ?></td>
-                  </tr>
-                  </table>
-          </td>
-        </td>
-      </tr>
-    </table>
-</div>
-  </div>
-  <p><?php include('./php/copywrite.php'); ?></p>
+<?php include('./php/menu.php'); ?>
+<?php
+  echo("yeah");
+?>
 </body>
 </html>
