@@ -1,0 +1,36 @@
+.menu_space{
+  position: fixed;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  height: 110%;
+  margin: {
+    top:-10px;
+    left: -10px;
+  }
+}
+.menubtn{
+  transition: 0.3s;
+  border:none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  font:{
+    size:25px;
+    family:impact;
+  }
+}
+.menubtn:hover{
+color: rgb(255, 22, 22);
+}
+@media screen and (min-width: 481px){
+// pcの場合
+  .m_space{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px){
+//スマホの場合
+  .m_space{
+    display: none;
+  }
+
+}
