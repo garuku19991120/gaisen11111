@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/test.min.css">
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('input[name=right]').on('click', function() {
+        move('s1', 's2');
+    });
+
+    $('input[name=left]').on('click', function() {
+        move('s2', 's1');
+    });
+
+    var move = function(_this, target) {
+        $('select[name=' + _this + '] option:selected').each(function() {
+            $('select[name=' + target + ']').append($(this).clone());
+            $(this).remove();
+        });
+    };
+});
+
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <table class="sample">
+      <tr>
+          <td>
+              <select name="s1" size="5" multiple="multiple">
+                  <option value="項目1">項目1</option>
+                  <option value="項目2">項目2</option>
+                  <option value="項目3">項目3</option>
+                  <option value="項目4">項目4</option>
+                  <option value="項目5">項目5</option>
+                  <option value="項目6">項目6</option>
+                  <option value="項目7">項目7</option>
+                  <option value="項目8">項目8</option>
+                  <option value="項目9">項目9</option>
+                  <option value="項目10">項目10</option>
+              </select>
+          </td>
+          <td>
+              <input type="button" name="right" value="≫" /><br /><br />
+              <input type="button" name="left" value="≪" />
+          </td>
+          <td>
+              <select name="s2" size="5" multiple="multiple">
+              </select>
+          </td>
+      </tr>
+  </table>
+</body>
+</html>
